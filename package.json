@@ -1,0 +1,36 @@
+{
+  "name": "@utu/design-system",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "start-storybook",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "taxfree@vs-ssh.visualstudio.com:v3/taxfree/UTUGlobal.TaxFree/UTU.Web.DesignSystem"
+  },
+  "author": "salvatore.laisa@utu.global",
+  "license": "ISC",
+  "dependencies": {
+    "haunted": "4.4.0",
+    "lit-html": "1.1.0",
+    "normalize.css": "8.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.5.0",
+    "@storybook/polymer": "5.1.9",
+    "@types/node": "12.0.12",
+    "babel-loader": "8.0.6",
+    "css-loader": "3.0.0",
+    "node-sass": "4.12.0",
+    "polymer-webpack-loader": "2.0.3",
+    "sass-loader": "7.1.0",
+    "to-string-loader": "1.1.5",
+    "ts-loader": "6.0.4",
+    "ts-node": "8.3.0",
+    "typescript": "3.5.2",
+    "typescript-require": "0.2.10"
+  }
+}

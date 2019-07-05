@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "allowSyntheticDefaultImports": true,
+    "module": "esnext",
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "declaration": true,
+    "outDir": "./"
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "node_modules/@types/"
+  ]
+}
