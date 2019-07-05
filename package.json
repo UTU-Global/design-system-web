@@ -20,6 +20,8 @@
   },
   "devDependencies": {
     "@babel/core": "7.5.0",
+    "@storybook/addon-actions": "5.1.9",
+    "@storybook/addon-knobs": "5.1.9",
     "@storybook/polymer": "5.1.9",
     "@types/node": "12.0.12",
     "babel-loader": "8.0.6",

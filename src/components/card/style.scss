@@ -1,0 +1,40 @@
+@import '~normalize.css/normalize.css';
+@import './../../visual/_variables.scss';
+@import './../../visual/_mixins.scss';
+@import './../../visual/_base.scss';
+@import './../../visual/_typography.scss';
+@import './../../visual/_margins.scss';
+
+article {
+  // @include sans-serif;
+
+  figure {
+    margin: 0;
+
+    img {
+      width: 100%
+    }
+  }
+
+  section {
+    padding: 2rem;
+
+    p {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    h6, h3, p {
+      color: $grey-darker;
+    }
+
+    &.white {
+      background: $white;
+    }
+
+    &.light {
+      background: $grey-lighter;
+    }
+  }
+}

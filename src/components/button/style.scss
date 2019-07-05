@@ -1,0 +1,272 @@
+@import '~normalize.css/normalize.css';
+@import './../../visual/_variables.scss';
+@import './../../visual/_mixins.scss';
+@import './../../visual/_base.scss';
+@import './../../visual/_typography.scss';
+
+:host([type="button"]), 
+:host([type="submit"]), 
+:host([type="reset"]) {
+  -webkit-appearance: none !important;
+}
+
+button {
+  border: 1px solid transparent;  
+  // border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  height: 2.5rem;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  transition: background .1s ease-out,
+              border-color .1s ease-out,
+              color .1s ease-out;
+
+  &:focus, &:hover {
+    text-decoration: none;
+  }
+
+  // Primary
+
+  &.primary {
+    background: $main-500;
+    border-color: $main-500;
+    color: $white;
+
+    &:hover:not([disabled]) {
+      background: $main-700;
+      border-color: $main-700;
+    }
+
+    &.success {
+      background: $success-700;
+      border-color: $success-700;
+
+      &:hover:not([disabled]) {
+        background: $success-900;
+        border-color: $success-900;
+      }
+    }
+
+    &.error {
+      background: $error-700;
+      border-color: $error-700;
+
+      &:hover:not([disabled]) {
+        background: $error-900;
+        border-color: $error-900;
+      }
+    }
+
+    &.neutral {
+      background: $grey-500;
+      border-color: $grey-500;
+
+      &:hover:not([disabled]) {
+        background: $grey-700;
+        border-color: $grey-700;
+      }
+    }
+
+    &.warning {
+      background: $warning-700;
+      border-color: $warning-700;
+
+      &:hover:not([disabled]) {
+        background: $warning-900;
+        border-color: $warning-900;
+      }
+    }
+
+    &.info {
+      background: $info-700;
+      border-color: $info-700;
+
+      &:hover:not([disabled]) {
+        background: $info-900;
+        border-color: $info-900;
+      }
+    }
+    
+  }
+
+  // Secondary
+
+  &.secondary {
+    background: transparent;
+    border-color: $main-500;
+    color: $main-500;
+  
+  
+    &:hover:not([disabled]) {
+      background: $main-700;
+      border-color: $main-700;
+      color: $white;
+    }
+
+    &.success {
+      border-color: $success-700;
+      color: $success-700;
+  
+      &:hover:not([disabled]) {
+        background: $success-900;
+        border-color: $success-900;
+      }
+    }
+  
+    &.error {
+      border-color: $error-700;
+      color: $error-700;
+  
+      &:hover:not([disabled]) {
+        background: $error-900;
+        border-color: $error-900;
+      }
+    }
+
+    &.neutral {
+      border-color: $grey-500;
+      color: $grey-500;
+  
+      &:hover:not([disabled]) {
+        background: $grey-700;
+        border-color: $grey-700;
+      }
+    }
+
+    &.warning {
+      border-color: $warning-700;
+      color: $warning-700;
+  
+      &:hover:not([disabled]) {
+        background: $warning-900;
+        border-color: $warning-900;
+      }
+    }
+
+    &.info {
+      border-color: $info-700;
+      color: $info-700;
+  
+      &:hover:not([disabled]) {
+        background: $info-900;
+        border-color: $info-900;
+      }
+    }
+  }
+
+  // Tertiary
+
+  &.tertiary {
+    background: transparent;
+    border-color: transparent;
+    color: $main-500;
+  
+  
+    &:hover:not([disabled]) {
+      color: $main-700;
+    }
+
+    &.success {
+      color: $success-700;
+  
+      &:hover:not([disabled]) {
+        color: $success-900;
+      }
+    }
+  
+    &.error {
+      color: $error-700;
+  
+      &:hover:not([disabled]) {
+        color: $error-900;
+      }
+    }
+
+    &.neutral {
+      color: $grey-500;
+  
+      &:hover:not([disabled]) {
+        color: $grey-700;
+      }
+    }
+
+    &.warning {
+      color: $warning-700;
+  
+      &:hover:not([disabled]) {
+        color: $warning-900;
+      }
+    }
+
+    &.info {
+      color: $info-700;
+  
+      &:hover:not([disabled]) {
+        color: $info-900;
+      }
+    }
+  }
+
+  // Fitted
+
+  &.fitted {
+    display: block;
+    width: 100%;
+  }
+
+   // Outline
+
+  &.outline {
+    outline: none;
+  }
+  // Progress
+
+  .content-loading,
+  .content-success,
+  .content-error {
+    display: none;
+  }
+
+  &.is-loading {
+    .content-default {
+      display: none;
+    }
+    .content-loading {
+      display: block;
+    }
+  }
+
+  &.is-success {
+    .content-default {
+      display: none;
+    }
+    .content-success {
+      display: block;
+    }
+  }
+
+  &.is-error {
+    .content-default {
+      display: none;
+    }
+    .content-error {
+      display: block;
+    }
+  }
+
+  // Disabled
+
+  &:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+  }
+  
+}
