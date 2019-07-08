@@ -11,25 +11,24 @@ import './tab-content';
 
 interface Props {
   labels: string;
-  active: number;
+  active: string;
   fitted: boolean;
 };
 
-export const Tab = ({
+export const Tab = function({
   labels = 'First,Second',
-  active = 0,
+  active = '0',
   fitted = false,
-}: Props): TemplateResult => {
-  const [getActive, setActive] = useState(active);
-
+}: Props): TemplateResult {
+  const [getActive, setActive] = useState(parseInt(active));
+  console.log('main',  active, getActive);
   useEffect(() => {
-    // console.log(active, document, document.activeElement.shadowRoot.activeElement)
-    // setActive(active);
-    // _changeTab(active);
+    console.log(active, getActive);
+    _showTab(getActive);
   });
 
   const _showTab = (index: number) => {
-    const tabs: NodeList = document.querySelectorAll('utu-tab-content');
+    const tabs: NodeList = this.querySelectorAll('utu-tab-content');
     tabs.forEach((e: HTMLElement, i: number): void => 
       i === index ? e.setAttribute('visible','') : e.removeAttribute('visible'));
   };
@@ -37,14 +36,9 @@ export const Tab = ({
   const _setActive = (evt) => {
     evt.preventDefault();
     const index: number = parseInt(evt.target.dataset.index);
-    _changeTab(index);
+    setActive(index);
     triggerEvent(evt.target, 'change', { 'active': index });
   };
-
-  const _changeTab = (index: number) => {
-    setActive(index);
-    _showTab(index);
-  }
 
   const classes: ClassInfo = {
     'fitted': fitted

@@ -1,11 +1,18 @@
-import { configure } from '@storybook/polymer';
+import { addParameters, configure } from '@storybook/polymer';
+import UTU from './utu';
+
+addParameters({
+  options: {
+    theme: UTU,
+  },
+});
 
 function loadStories() {
   require('../stories/visual.ts');
   require('../stories/button.ts');
   require('../stories/card.ts');
+  require('../stories/datepicker.ts');
   require('../stories/tabs.ts');
-  // You can require as many stories as you need.
 }
 
 configure(loadStories, module);

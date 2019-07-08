@@ -38,7 +38,7 @@ const progress: object = {
 
 
 storiesOf('Button', module)
-  .add('with text',
+  .add('Playground',
     (): TemplateResult => html`
       <style>${styles}</style>
       <style>body { padding: 30px; } </style>

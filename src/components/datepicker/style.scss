@@ -1,0 +1,20 @@
+@import '~normalize.css/normalize.css';
+@import './../../visual/_variables.scss';
+@import './../../visual/_mixins.scss';
+@import './../../visual/_base.scss';
+@import './../../visual/_typography.scss';
+@import './../../visual/_forms.scss';
+@import 'theme';
+@import 'override';
+
+div {
+  @include sans-serif;
+}
+
+div {
+  &.inline {
+    input {
+      display: none;
+    }
+  }
+}

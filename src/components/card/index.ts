@@ -25,7 +25,8 @@ export const Card = ({
     'light': background === 'light',
   }
 
-  return html`      
+  return html`
+    <style>${styles}</style>      
     <article 
       class="card"
     >
