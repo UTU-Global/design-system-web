@@ -20,12 +20,12 @@ export const Tab = function({
   active = '0',
   fitted = false,
 }: Props): TemplateResult {
-  const [getActive, setActive] = useState(parseInt(active));
-  console.log('main',  active, getActive);
+  const [getActive, setActive] = useState(parseInt(active) || 0);
+  
   useEffect(() => {
-    console.log(active, getActive);
-    _showTab(getActive);
-  });
+    _showTab(parseInt(active));
+    setActive(parseInt(active));
+  }, [active]);
 
   const _showTab = (index: number) => {
     const tabs: NodeList = this.querySelectorAll('utu-tab-content');
@@ -37,6 +37,7 @@ export const Tab = function({
     evt.preventDefault();
     const index: number = parseInt(evt.target.dataset.index);
     setActive(index);
+    _showTab(index);
     triggerEvent(evt.target, 'change', { 'active': index });
   };
 

@@ -1,0 +1,19 @@
+// @import '~normalize.css/normalize.css';
+// @import './../../visual/_variables.scss';
+// @import './../../visual/_mixins.scss';
+// @import './../../visual/_base.scss';
+// @import './../../visual/_typography.scss';
+
+figure {
+
+}
+
+section {
+  ul {
+    list-style: none;
+    
+    li {
+      list-style: none;
+    }
+  }
+}

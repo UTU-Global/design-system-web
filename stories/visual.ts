@@ -1,9 +1,24 @@
 import { storiesOf } from '@storybook/polymer';
-import { html } from 'lit-html';
+import { html, TemplateResult } from 'lit-html';
 
 import styles from './../src/visual/index.scss';
 
+const colors: string[] = ['#00b398', '#009681', '#1e1e20', '#3D3D3D', '#666666', '#7A7A7A', 
+  '#999999', '#B8B8B8', '#dddddd', '#E0E0E0', '#eeeeee', '#fcfcfc;'];
+
 storiesOf('Visual', module)
+  .add('Colors', () => html`
+    <style>${styles}</style>
+    <style>
+      #wrapper { padding: 30px; }
+      .color-box { padding: 5px 10px;  }
+    </style>
+    <div id="wrapper">
+      <h1>Colors</h1>
+      ${colors.map((e: string, i: number): TemplateResult => 
+        html`<div class="color-box" style="background: ${e}">${e}</div>`)}
+    </div>
+  `)
   .add('Kitchen sink', () => html`
 <style>${styles}</style>
 <style>#wrapper { padding: 30px; }</style>

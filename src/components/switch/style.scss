@@ -1,0 +1,48 @@
+@import '~normalize.css/normalize.css';
+@import './../../visual/_variables.scss';
+@import './../../visual/_mixins.scss';
+@import './../../visual/_base.scss';
+@import './../../visual/_typography.scss';
+
+$size: 60px;
+
+.switch{
+	display: none;
+}
+
+.switch {
+  &+ label {
+    cursor: pointer;
+    width: $size;
+    height: $size / 2;
+    position: relative;
+    background: #fff;
+    border-radius: $size / 2;
+    display: inline-block;
+    border: 2px solid $main-500;
+    transition: all .2s ease-in-out 0s;
+  }
+
+  &+ label:before {
+    top: 55%;
+    content: '';
+    right: 33px;
+    width: $size / 3;
+    height: $size / 3;
+    background: $main-500;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -11.5px;
+    transition: inherit;
+  }
+
+  &:checked + label{
+    background: rgba($main-500, 0.25);
+    border-color: $main-500;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0,.1);
+  }
+
+  &:checked + label:before{
+    right: 3px;
+  }
+}
