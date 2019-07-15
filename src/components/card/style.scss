@@ -5,19 +5,96 @@
 @import './../../visual/_typography.scss';
 @import './../../visual/_margins.scss';
 
+@keyframes fading {
+  0% {
+    opacity: .2;
+  }
+  
+  50% {
+    opacity: .4;
+  }
+  
+  100% {
+    opacity: .2;
+  }
+}
+
 article {
-  // @include sans-serif;
+  // @include sans-serif; 
+  &.loading {
+
+    figure {
+      img {
+        display: none;
+        
+        &.placeholder {
+          animation: fading 1.2s infinite;
+          min-height: 170px;
+          background-color: $grey-500;
+          display: inline;
+        }
+      }
+    }
+
+    section {
+      h6, h3 {
+        background-color: $grey-darker;
+        animation: fading 1.5s infinite;
+      }
+
+      h6 {
+        height: 20px;
+        width: 70%;
+      }
+
+      h3 {
+        height: 30px;
+      }
+
+      p {
+        display: none;
+      }
+
+      .placeholder {
+        display: block;
+        animation: fading 1.5s infinite;
+
+        .line {
+          height: 16px;
+          width: 100%;
+          margin: 8px 0;
+          background-color: $grey-darker;
+
+          &:first-child {
+            width: 60%;
+          }
+
+          &:last-child {
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
 
   figure {
     margin: 0;
 
     img {
-      width: 100%
+      width: 100%;
+
+      &.placeholder {
+        display: none;
+      }
     }
   }
 
   section {
     padding: 2rem;
+
+    .placeholder {
+      display: none;
+    }
 
     p {
       &:last-child {

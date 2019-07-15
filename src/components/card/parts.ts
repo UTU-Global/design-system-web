@@ -11,6 +11,7 @@ const _media = (
 ): TemplateResult =>
   check(value) ? html`
     <figure>
+      <img class="placeholder">
       <img 
         src=${value} 
         alt=${title}

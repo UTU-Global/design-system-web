@@ -1,5 +1,5 @@
 import { storiesOf, addDecorator } from '@storybook/polymer';
-import { withKnobs, text, select } from '@storybook/addon-knobs';
+import { withKnobs, text, select, boolean } from '@storybook/addon-knobs';
 import { html, TemplateResult } from 'lit-html';
 
 import styles from './../src/visual/index.scss';
@@ -31,6 +31,7 @@ storiesOf('Card', module)
     <h3>&lt;utu-card&gt;</h3>
     <div class="wrapper">
       <utu-card
+        ?loading=${boolean('loading', false)}
         background=${select('background', background, 'white')}
       >
         <p>Basic, just <b>regular</b> <i>text</i> content within the tag.</p>
@@ -38,6 +39,7 @@ storiesOf('Card', module)
       </utu-card>
 
       <utu-card
+        ?loading=${boolean('loading', false)}
         title=${text('title', 'Full features')}
         media=${text('media', img)}
         taxonomy=${text('taxonomy', 'Taxonomy')}
@@ -47,6 +49,7 @@ storiesOf('Card', module)
       </utu-card>
 
       <utu-card
+        ?loading=${boolean('loading', false)}
         title="No image"
         taxonomy=${text('taxonomy', 'Taxonomy')}
         background=${select('background', background, 'white')}
@@ -55,6 +58,7 @@ storiesOf('Card', module)
       </utu-card>
 
       <utu-card
+        ?loading=${boolean('loading', false)}
         title="Title + content"
         background=${select('background', background, 'white')}
       >
@@ -71,6 +75,7 @@ storiesOf('Card', module)
     <h3>&lt;utu-card&gt;</h3>
     <div class="wrapper">
       <utu-card
+        ?loading=${boolean('loading', false)}
         background=${select('background', background, 'light')}
       >
         <p>Basic, just <b>regular</b> <i>text</i> content within the tag.</p>
@@ -78,6 +83,7 @@ storiesOf('Card', module)
       </utu-card>
 
       <utu-card
+        ?loading=${boolean('loading', false)}
         title=${text('title', 'Full features')}
         media=${text('media', img)}
         taxonomy=${text('taxonomy', 'Taxonomy')}
@@ -87,6 +93,7 @@ storiesOf('Card', module)
       </utu-card>
 
       <utu-card
+        ?loading=${boolean('loading', false)}
         title="No image"
         taxonomy=${text('taxonomy', 'Taxonomy')}
         background=${select('background', background, 'light')}
@@ -95,6 +102,7 @@ storiesOf('Card', module)
       </utu-card>
 
       <utu-card
+        ?loading=${boolean('loading', false)}
         title="Title + content"
         background=${select('background', background, 'light')}
       >

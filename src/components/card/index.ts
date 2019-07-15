@@ -11,24 +11,31 @@ interface Props {
   taxonomy: string;
   media: string;
   background: string;
+  loading: boolean;
 };
 
 export const Card = ({
   title = '',
   taxonomy = '',
   media = '',
-  background = 'white'
+  background = 'white',
+  loading = false
 }: Props): TemplateResult => {
 
-  const classes :ClassInfo = {
+  const classes: ClassInfo = {
     'white': background === 'white',
     'light': background === 'light',
+  }
+
+  const optimistic: ClassInfo = {
+    'card': true,
+    'loading': loading,
   }
 
   return html`
     <style>${styles}</style>      
     <article 
-      class="card"
+      class=${classMap(optimistic)}
     >
       ${_media(media, title)}
       <section
@@ -37,12 +44,19 @@ export const Card = ({
         ${_taxonomy(taxonomy)}
         <h3>${title}</h3>
         <p><slot></slot></p>
+
+        <div class="placeholder">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
       </section>
     </article>
   `;
 }
 
-Card.observedAttributes = ['title', 'taxonomy', 'media', 'background'];
+Card.observedAttributes = ['title', 'taxonomy', 'media', 'background', 'loading'];
 
 // @ts-ignore
 customElements.define('utu-card', component(Card));
