@@ -16,7 +16,7 @@
   "author": "salvatore.laisa@utu.global",
   "license": "ISC",
   "dependencies": {
-    "flatpickr": "4.6.2",
+    "flatpickr": "4.5.7",
     "haunted": "4.5.1",
     "lit-html": "1.1.1",
     "normalize.css": "8.0.1"
