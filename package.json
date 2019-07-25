@@ -7,7 +7,8 @@
     "start": "start-storybook",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:scss": "webpack --config webpack.scss.js",
-    "build:storybook": "build-storybook -c .storybook -o storybook-dist"
+    "build:storybook": "build-storybook -c .storybook -o storybook-dist",
+    "deploy:surge": "surge ./storybook-dist/ https://utu-ds.surge.sh"
   },
   "repository": {
     "type": "git",

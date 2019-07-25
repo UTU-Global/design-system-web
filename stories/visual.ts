@@ -3,8 +3,12 @@ import { html, TemplateResult } from 'lit-html';
 
 import styles from './../src/visual/index.scss';
 
-const colors: string[] = ['#00b398', '#009681', '#1e1e20', '#3D3D3D', '#666666', '#7A7A7A', 
-  '#999999', '#B8B8B8', '#dddddd', '#E0E0E0', '#eeeeee', '#fcfcfc;'];
+const corporate: string[] = ['#1E1E20', '#009681', '#00B398', '#29363D', '#666666'];
+const primary: string[] = ['#DDDDDD', '#EEEEEE', '#FCFCFC'];
+const charts: string[] = ['#07272D', '#007864', '#64CCC9', '#244C5A'];
+const web: string[] = ['#1E1E20', '#666666', '#00B398', '#FCFCFC'];
+const fluids: string[] = ['#FFC000', '#15B7C4', '#92d050', '#00cc66', '#ff6600', '#ED327F'];
+const bgs: string[] = ['#DDDDDD', '#00B398', '#EEEEEE', '#FCFCFC', '#FFFFFF'];
 
 storiesOf('Visual', module)
   .add('Colors', () => html`
@@ -12,10 +16,33 @@ storiesOf('Visual', module)
     <style>
       #wrapper { padding: 30px; }
       .color-box { padding: 5px 10px;  }
+      h3 { margin-top: 20px }
     </style>
     <div id="wrapper">
       <h1>Colors</h1>
-      ${colors.map((e: string, i: number): TemplateResult => 
+
+      <h3>Corporate colors</h3>
+      ${corporate.map((e: string, i: number): TemplateResult => 
+        html`<div class="color-box" style="background: ${e}">${e}</div>`)}
+      
+      <h3>Primary colors</h3>
+      ${primary.map((e: string, i: number): TemplateResult => 
+        html`<div class="color-box" style="background: ${e}">${e}</div>`)}
+
+      <h3>Background and chart colors</h3>
+      ${charts.map((e: string, i: number): TemplateResult => 
+        html`<div class="color-box" style="background: ${e}">${e}</div>`)}
+
+      <h3>Web fonts colors</h3>
+      ${web.map((e: string, i: number): TemplateResult => 
+        html`<div class="color-box" style="background: ${e}">${e}</div>`)}
+
+      <h3>Fluid colors</h3>
+      ${fluids.map((e: string, i: number): TemplateResult => 
+        html`<div class="color-box" style="background: ${e}">${e}</div>`)}
+
+      <h3>Background</h3>
+      ${bgs.map((e: string, i: number): TemplateResult => 
         html`<div class="color-box" style="background: ${e}">${e}</div>`)}
     </div>
   `)
