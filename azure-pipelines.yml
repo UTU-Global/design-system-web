@@ -15,7 +15,18 @@ steps:
     versionSpec: '12.x'
   displayName: 'Install Node.js'
 
+- task: Npm@1
+  inputs:
+    command: 'install'
+  displayName: 'Install dependencies'
+
 - script: |
-    npm install
-    npm run build
-  displayName: 'npm install and build'
+    npm run build:storybook
+  displayName: 'Build static Storybook app'
+
+- task: Npm@1
+  inputs:
+    command: 'publish'
+    publishRegistry: 'useFeed'
+    publishFeed: 'f932c2cb-2b6b-41d2-9ede-8930445b10a3'
+  displayName: 'Publish to internal NPM registry'
