@@ -45,17 +45,17 @@ $grey-darker: #1F1F1F;
 
 // Semantic
 
-$info-50: #E1F5FE;  // Material Light Blue 50
-$info-200: #81D4FA; // Material Light Blue 200
-$info-500: #03A9F4; // Material Light Blue 500
-$info-700: #0288D1; // Material Light Blue 700
-$info-900: #01579B; // Material Light Blue 900
+$info-500: #15B7C4;
+$info-50: lighten($info-500, 10%);
+$info-200: lighten($info-500, 5%);
+$info-700: darken($info-500, 5%);
+$info-900: darken($info-500, 10%);
 
-$success-50: #E8F5E9;  // Material Green 50
-$success-200: #A5D6A7; // Material Green 200
-$success-500: #4CAF50; // Material Green 500
-$success-700: #388E3C; // Material Green 700
-$success-900: #1B5E20; // Material Green 900
+$success-500: #00cc66;
+$success-50: lighten($success-500, 10%); 
+$success-200: lighten($success-500, 5%);
+$success-700: darken($success-500, 5%);
+$success-900: darken($success-500, 10%);
 
 $warning-50: #FFFDE7;  // Material Yellow 50
 $warning-200: #FFF59D; // Material Yellow 200

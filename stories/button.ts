@@ -30,8 +30,8 @@ const states: object = {
 };
 
 const progress: object = {
-  success: 'success',
-  error: 'error',
+  // success: 'success',
+  // error: 'error',
   pending: 'pending',
   default: ''
 };
@@ -47,7 +47,7 @@ storiesOf('Button', module)
         ?fitted=${boolean('fitted', false)}
         ?disabled=${boolean('disabled', false)}
         ?nooutline=${boolean('nooutline', false)}
-        priority=${select('priority', priorities, 'secondary')}
+        priority=${select('priority', priorities, 'primary')}
         type=${select('type', types, 'button')}
         state=${select('state', states, '')}
         progress=${select('progress', progress, '')}

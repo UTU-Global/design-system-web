@@ -48,12 +48,12 @@ button {
     }
 
     &.success {
-      background: $success-700;
-      border-color: $success-700;
+      background: $success-500;
+      border-color: $success-500;
 
       &:hover:not([disabled]) {
-        background: $success-900;
-        border-color: $success-900;
+        background: $success-700;
+        border-color: $success-700;
       }
     }
 
@@ -88,12 +88,12 @@ button {
     }
 
     &.info {
-      background: $info-700;
-      border-color: $info-700;
+      background: $info-500;
+      border-color: $info-500;
 
       &:hover:not([disabled]) {
-        background: $info-900;
-        border-color: $info-900;
+        background: $info-700;
+        border-color: $info-700;
       }
     }
     
@@ -114,12 +114,12 @@ button {
     }
 
     &.success {
-      border-color: $success-700;
-      color: $success-700;
+      border-color: $success-500;
+      color: $success-500;
   
       &:hover:not([disabled]) {
-        background: $success-900;
-        border-color: $success-900;
+        background: $success-700;
+        border-color: $success-700;
       }
     }
   
@@ -154,12 +154,12 @@ button {
     }
 
     &.info {
-      border-color: $info-700;
-      color: $info-700;
+      border-color: $info-500;
+      color: $info-500;
   
       &:hover:not([disabled]) {
-        background: $info-900;
-        border-color: $info-900;
+        background: $info-700;
+        border-color: $info-700;
       }
     }
   }
@@ -177,10 +177,10 @@ button {
     }
 
     &.success {
-      color: $success-700;
+      color: $success-500;
   
       &:hover:not([disabled]) {
-        color: $success-900;
+        color: $success-700;
       }
     }
   
@@ -209,10 +209,10 @@ button {
     }
 
     &.info {
-      color: $info-700;
+      color: $info-500;
   
       &:hover:not([disabled]) {
-        color: $info-900;
+        color: $info-700;
       }
     }
   }
