@@ -24,6 +24,10 @@ steps:
     npm run build:storybook
   displayName: 'Build static Storybook app'
 
+- script: |
+    npm run build:components
+  displayName: 'Build vanilla Web Components'
+
 - task: Npm@1
   inputs:
     command: 'publish'

@@ -4,3 +4,6 @@ dist
 storybook-dist
 src/**/*.d.ts
 stories/**/*.d.ts
+components
+libs
+types
