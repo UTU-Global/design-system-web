@@ -3,12 +3,9 @@ import { html, TemplateResult } from 'lit-html';
 
 import styles from './../src/visual/index.scss';
 
-const corporate: string[] = ['#1E1E20', '#009681', '#00B398', '#29363D', '#666666'];
-const primary: string[] = ['#DDDDDD', '#EEEEEE', '#FCFCFC'];
-const charts: string[] = ['#07272D', '#007864', '#64CCC9', '#244C5A'];
-const web: string[] = ['#1E1E20', '#666666', '#00B398', '#FCFCFC'];
-const fluids: string[] = ['#FFC000', '#15B7C4', '#92d050', '#00cc66', '#ff6600', '#ED327F'];
-const bgs: string[] = ['#DDDDDD', '#00B398', '#EEEEEE', '#FCFCFC', '#FFFFFF'];
+const brand: string[] = ['#00B398', '#009681', '#1E1E20'];
+const bgs: string[] = ['#1E1E20', '#666666', '#999999', '#D5D5D5', '#F5F5F5', '#FFFFFF'];
+const toast: string[] = ['#008CC9', '#009681', '#FF9948', '#E33D30'];
 
 storiesOf('Visual', module)
   .add('Colors', () => html`
@@ -20,30 +17,19 @@ storiesOf('Visual', module)
     </style>
     <div id="wrapper">
       <h1>Colors</h1>
-
-      <h3>Corporate colors</h3>
-      ${corporate.map((e: string, i: number): TemplateResult => 
-        html`<div class="color-box" style="background: ${e}">${e}</div>`)}
       
-      <h3>Primary colors</h3>
-      ${primary.map((e: string, i: number): TemplateResult => 
+      <h3>Brand</h3>
+      ${brand.map((e: string, i: number): TemplateResult => 
         html`<div class="color-box" style="background: ${e}">${e}</div>`)}
 
-      <h3>Background and chart colors</h3>
-      ${charts.map((e: string, i: number): TemplateResult => 
-        html`<div class="color-box" style="background: ${e}">${e}</div>`)}
-
-      <h3>Web fonts colors</h3>
-      ${web.map((e: string, i: number): TemplateResult => 
-        html`<div class="color-box" style="background: ${e}">${e}</div>`)}
-
-      <h3>Fluid colors</h3>
-      ${fluids.map((e: string, i: number): TemplateResult => 
-        html`<div class="color-box" style="background: ${e}">${e}</div>`)}
-
-      <h3>Background</h3>
+      <h3>Background and texts</h3>
       ${bgs.map((e: string, i: number): TemplateResult => 
         html`<div class="color-box" style="background: ${e}">${e}</div>`)}
+
+      <h3>Toast pallet</h3>
+      ${toast.map((e: string, i: number): TemplateResult => 
+        html`<div class="color-box" style="background: ${e}">${e}</div>`)}
+
     </div>
   `)
   .add('Kitchen sink', () => html`

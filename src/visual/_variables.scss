@@ -4,7 +4,7 @@
 // Colors
 //
 
-$main-500: #00b398;
+$main-500: #00B398;
 $main-700: #009681;
 
 // Orange
@@ -45,29 +45,29 @@ $grey-darker: #1F1F1F;
 
 // Semantic
 
-$info-500: #15B7C4;
+$info-500: #008CC9;
 $info-50: lighten($info-500, 10%);
 $info-200: lighten($info-500, 5%);
 $info-700: darken($info-500, 5%);
 $info-900: darken($info-500, 10%);
 
-$success-500: #00cc66;
+$success-500: $main-500;
 $success-50: lighten($success-500, 10%); 
 $success-200: lighten($success-500, 5%);
 $success-700: darken($success-500, 5%);
 $success-900: darken($success-500, 10%);
 
-$warning-50: #FFFDE7;  // Material Yellow 50
-$warning-200: #FFF59D; // Material Yellow 200
-$warning-500: #FFEB3B; // Material Yellow 500
-$warning-700: #FBC02D; // Material Yellow 700
-$warning-900: #F57F17; // Material Yellow 900
+$warning-500: #FF9948;
+$warning-50: lighten($warning-500, 10%);
+$warning-200: lighten($warning-500, 5%);
+$warning-700: darken($warning-500, 5%);
+$warning-900: darken($warning-500, 10%);
 
-$error-50: #FFEBEE;  // Material Red 50
-$error-200: #EF9A9A; // Material Red 200
-$error-500: #F44336; // Material Red 500
-$error-700: #D32F2F; // Material Red 700
-$error-900: #B71C1C; // Material Red 900
+$error-500: #E33D30;
+$error-50: lighten($error-500, 10%);
+$error-200: lighten($error-500, 5%);
+$error-700: darken($error-500, 5%);
+$error-900: darken($error-500, 10%);
 
 // Neutral
 
