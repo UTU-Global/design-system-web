@@ -35,6 +35,10 @@ button {
     text-decoration: none;
   }
 
+  & > * {
+    pointer-events: none;
+  }
+
   // Primary
 
   &.primary {

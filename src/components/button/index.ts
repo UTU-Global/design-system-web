@@ -38,7 +38,7 @@ export const Button = ({
     'is-success': progress === 'success',
     'is-error': progress === 'error',
   }
-
+  
   return html`
     <style>${styles}</style>
     <button
@@ -46,7 +46,7 @@ export const Button = ({
       ?disabled=${disabled}
       class=${classMap(classes)}
     >
-      <span class="content-loading"><amber-progress size="24" stroke="2" value="25"></amber-progress></span>
+      <span class="content-loading"></span>
       <span class="content-success">Success</span>
       <span class="content-error">Error</span>
       <span class="content-default"><slot></slot></span>
