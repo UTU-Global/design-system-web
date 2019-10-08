@@ -29,7 +29,7 @@ storiesOf('Visual', module)
       ${bgs.map((e: string, i: number): TemplateResult => 
         html`<div class="color-box" style="background: ${e}">${e}</div>`)}
 
-      <h3>Toast pallet</h3>
+      <h3>Toast palette</h3>
       ${toast.map((e: string, i: number): TemplateResult => 
         html`<div class="color-box" style="background: ${e}">${e}</div>`)}
 

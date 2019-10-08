@@ -8,7 +8,7 @@ import './../src/components/card';
 
 const img: string= 'https://source.unsplash.com/random/300x180/';
 
-const background: object = {
+const background: any = {
   white: 'white',
   light: 'light',
 };

@@ -1,0 +1,45 @@
+@import '~normalize.css/normalize.css';
+@import './../../visual/_variables.scss';
+@import './../../visual/_mixins.scss';
+@import './../../visual/_base.scss';
+@import './../../visual/_typography.scss';
+
+.pagination {
+
+  ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 40px);
+    color: $grey-dark;
+
+    li {
+      $dim: 30px;
+
+      text-align: center;
+
+      span {
+        transition: all 0.3s ease;
+        display: inline-block;
+        width: $dim;
+        height: $dim;
+        line-height: $dim;
+        font-size: 12px;
+        border-radius: 50%;
+        background-color: $grey-light;
+      }
+
+      .boundaries {
+        font-size: 15px;
+        line-height: $dim - 3;
+      }
+
+      &.active span,
+      &:hover span{
+        cursor: pointer;
+        background-color: $main-500;
+        color: white;
+      }
+    }
+  }
+}

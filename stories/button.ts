@@ -9,19 +9,19 @@ import './../src/components/button';
 
 addDecorator(withKnobs);
 
-const priorities: object = {
+const priorities: any = {
   primary: 'primary',
   secondary: 'secondary',
   tertiary: 'tertiary',
 };
 
-const types: object = {
+const types: any = {
   button: 'button',
   submit: 'submit',
   reset: 'reset'
 };
 
-const states: object = {
+const states: any = {
   success: 'success',
   error: 'error',
   neutral: 'neutral',
@@ -30,7 +30,7 @@ const states: object = {
   default: ''
 };
 
-const progress: object = {
+const progress: any = {
   // success: 'success',
   // error: 'error',
   pending: 'pending',

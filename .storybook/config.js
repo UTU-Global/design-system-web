@@ -13,6 +13,7 @@ function loadStories() {
   require('../stories/card.ts');
   require('../stories/datepicker.ts');
   // require('../stories/navbar.ts');
+  require('../stories/pagination.ts');
   require('../stories/switch.ts');
   require('../stories/tabs.ts');
 }

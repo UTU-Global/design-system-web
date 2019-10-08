@@ -43,7 +43,10 @@ select,
   border-radius: $border-radius;
   box-shadow: none;
   display: inline-block;
-  height: 2.5em;
+  color: $grey-dark;
+  font-size: 14px;
+  line-height: 16px;
+  height: 2.4em;
   width: 100%;
   max-width: 100%;
   padding: .8rem $side-padding;

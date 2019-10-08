@@ -14,12 +14,11 @@ $size: 60px;
   &+ label {
     cursor: pointer;
     width: $size;
-    height: $size / 2;
+    height: ($size / 2) - 4;
     position: relative;
     background: $grey-400;
     border-radius: $size / 2;
     display: inline-block;
-    // border: 1px solid $grey-400;
     transition: all .2s ease-in-out 0s;
   }
 
