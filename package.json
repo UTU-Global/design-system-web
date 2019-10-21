@@ -1,6 +1,6 @@
 {
   "name": "@utu/design-system",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "",
   "main": "src/index.js",
   "scripts": {
@@ -18,18 +18,19 @@
   "author": "salvatore.laisa@utu.global",
   "license": "ISC",
   "dependencies": {
+    "@material/mwc-icon": "0.10.0",
     "flatpickr": "4.5.7",
     "haunted": "4.6.1",
     "lit-html": "1.1.2",
     "normalize.css": "8.0.1"
   },
   "devDependencies": {
-    "@babel/core": "7.6.2",
-    "@storybook/addon-actions": "5.2.3",
-    "@storybook/addon-knobs": "5.2.3",
-    "@storybook/polymer": "5.2.3",
-    "@storybook/theming": "5.2.3",
-    "@types/node": "12.7.11",
+    "@babel/core": "7.6.4",
+    "@storybook/addon-actions": "5.2.4",
+    "@storybook/addon-knobs": "5.2.4",
+    "@storybook/polymer": "5.2.4",
+    "@storybook/theming": "5.2.4",
+    "@types/node": "12.11.1",
     "babel-loader": "8.0.6",
     "css-loader": "3.2.0",
     "mini-css-extract-plugin": "0.8.0",
@@ -39,9 +40,9 @@
     "to-string-loader": "1.1.5",
     "ts-loader": "6.2.0",
     "ts-node": "8.4.1",
-    "typescript": "3.6.3",
+    "typescript": "3.6.4",
     "typescript-require": "0.2.10",
-    "webpack": "4.41.0",
+    "webpack": "4.41.2",
     "webpack-cli": "3.3.9"
   }
 }

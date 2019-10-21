@@ -2,6 +2,8 @@ import { storiesOf, addDecorator } from '@storybook/polymer';
 import { withKnobs, select, boolean } from '@storybook/addon-knobs';
 import { html, TemplateResult } from 'lit-html';
 import { component, useState, useEffect } from 'haunted';
+import '@material/mwc-icon/mwc-icon-font';
+import '@material/mwc-icon';
 
 import styles from './../src/visual/index.scss';
 import './../src/components/button';
@@ -81,6 +83,10 @@ storiesOf('Button', module)
         state=${select('state', states, '')}
         progress=${select('progress', progress, '')}
       >Button</utu-button>
+      
+      <utu-button>
+        <mwc-icon>search</mwc-icon> With icon
+      </utu-button>
     `)
   .add('Interaction',
     (): TemplateResult => html`

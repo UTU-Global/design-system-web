@@ -3,6 +3,7 @@ import { html, TemplateResult } from 'lit-html';
 import { kitchen } from './visual/kitchen';
 import { table } from './visual/table';
 import { form } from './visual/form';
+import { icons } from './visual/icons';
 
 import styles from './../src/visual/index.scss';
 
@@ -56,4 +57,9 @@ ${kitchen()}
       }
     </style>
     ${form()}
+  `)
+  .add('Icons', () => html`
+<style>${styles}</style>
+<style>#wrapper { padding: 30px; }</style>
+${icons()}
   `);
