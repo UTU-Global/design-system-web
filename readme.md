@@ -1,5 +1,8 @@
 # utu-design-system
 
+![npm](https://img.shields.io/npm/v/@utu-global/design-system)
+![NPM](https://img.shields.io/npm/l/@utu-global/design-system)
+
 ⚠️ `ALPHA` version of the UTU Design System Web implementation. ⚠️
 
 🚧 **WORK IN PROGRESS:** UI/UX, documentation and APIs are subject to change until we hit a v1.0 (*pre*)release, so be sure to check out source files and Storybook builds before integrating the components or styles in your project. 🚧
@@ -9,21 +12,21 @@ This project aims to implement the UTU Design System, developed by [3forcom](htt
 ### How to use
 Install with NPM
 ```bash
-$ npm i @utu/design-system
+$ npm i @utu-global/design-system
 ```
 
 Then add in your `.js` or `.ts` files:
 ```javascript
 // Add all of the components
-import '@utu/design-system/components';
+import '@utu-global/design-system/components';
 
 // Add specific components
-import '@utu/design-system/components/button';
-import '@utu/design-system/components/card';
-import '@utu/design-system/components/datepicker';
-import '@utu/design-system/components/switch';
-import '@utu/design-system/components/tabs';
+import '@utu-global/design-system/components/button';
+import '@utu-global/design-system/components/card';
+import '@utu-global/design-system/components/datepicker';
+import '@utu-global/design-system/components/switch';
+import '@utu-global/design-system/components/tabs';
 ```
 
 ### License
-Internal use.
+Released unther the [MIT license](LICENSE).

@@ -2,7 +2,6 @@ import { storiesOf, addDecorator } from '@storybook/polymer';
 import { withKnobs, select, boolean } from '@storybook/addon-knobs';
 import { html, TemplateResult } from 'lit-html';
 import { component, useState, useEffect } from 'haunted';
-import '@material/mwc-icon/mwc-icon-font';
 import '@material/mwc-icon';
 
 import styles from './../src/visual/index.scss';

@@ -2,7 +2,7 @@
 const fallback = (tag: string): string => `utu-${tag}`;
 
 const define =
-  (tag: string, definition: Function) :void => 
+  (tag: string, definition: any) :void => 
     customElements.get(tag) ?
       customElements.define(fallback(tag), definition) :
       customElements.define(tag, definition); 

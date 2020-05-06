@@ -1,5 +1,4 @@
 import { TemplateResult, html } from "lit-html";
-import '@material/mwc-icon/mwc-icon-font';
 import '@material/mwc-icon';
 
 const link = (text: string, url: string): TemplateResult => html`
