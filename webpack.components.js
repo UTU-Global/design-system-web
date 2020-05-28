@@ -12,6 +12,7 @@ module.exports = {
     datepicker: './src/components/datepicker/index.ts',
     switch: './src/components/switch/index.ts',
     tabs: './src/components/tabs/index.ts',
+    tag: './src/components/tag/index.ts',
   },
 	output: {
     path: path.join(__dirname, './components'),
