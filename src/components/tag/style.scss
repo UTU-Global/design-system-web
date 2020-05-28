@@ -1,0 +1,124 @@
+@import '~normalize.css/normalize.css';
+@import './../../visual/_variables.scss';
+@import './../../visual/_mixins.scss';
+@import './../../visual/_base.scss';
+@import './../../visual/_typography.scss';
+
+section {
+  @include sans-serif;
+}
+
+span {
+  --mdc-icon-size: 1.3em;
+
+  display: inline-block;
+  border-radius: $border-radius;
+  background-color: $main-500;
+  color: $white;
+  font-size: 0.8em;
+  padding: 1px 7px;
+  border: 1px solid $main-500;
+  transition: all 0.3s ease;
+  user-select: none;
+
+  &.inverse {
+    background-color: $white;
+    color: $main-500;
+  }
+
+  &.success {
+    background: $success-500;
+    border-color: $success-500;
+
+    &.inverse {
+      background-color: $white;
+      color: $success-500;
+    }
+
+    &:hover:not([disabled]) {
+      background: $success-700;
+      border-color: $success-700;
+    }
+  }
+
+  &.error {
+    background: $error-500;
+    border-color: $error-500;
+
+    &.inverse {
+      background-color: $white;
+      color: $error-500;
+    }
+
+    &:hover:not([disabled]) {
+      background: $error-700;
+      border-color: $error-700;
+    }
+  }
+
+  &.neutral {
+    background: $grey-500;
+    border-color: $grey-500;
+
+    &.inverse {
+      background-color: $white;
+      color: $grey-500;
+    }
+
+    &:hover:not([disabled]) {
+      background: $grey-700;
+      border-color: $grey-700;
+    }
+  }
+
+  &.warning {
+    background: $warning-500;
+    border-color: $warning-500;
+
+    &.inverse {
+      background-color: $white;
+      color: $warning-500;
+    }
+
+    &:hover:not([disabled]) {
+      background: $warning-700;
+      border-color: $warning-700;
+    }
+  }
+
+  &.info {
+    background: $info-500;
+    border-color: $info-500;
+
+    &.inverse {
+      background-color: $white;
+      color: $info-500;
+    }
+
+    &:hover:not([disabled]) {
+      background: $info-700;
+      border-color: $info-700;
+    }
+  }
+
+  mwc-icon {
+    position: relative;
+    top: 3px;
+  }
+}
+
+span:hover{
+  cursor: pointer;
+  background-color: $main-700;
+
+  &.inverse {
+    background-color: $white;
+    color: $main-700;
+    border-color: $main-700;
+  }
+
+  &.selected {
+    background-color: $grey-700;
+    border-color: $grey-700;
+  }
+}

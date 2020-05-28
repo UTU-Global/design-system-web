@@ -16,6 +16,7 @@ function loadStories() {
   require('../stories/pagination.ts');
   require('../stories/switch.ts');
   require('../stories/tabs.ts');
+  require('../stories/tag.ts');
 }
 
 configure(loadStories, module);

@@ -72,6 +72,7 @@ storiesOf('Button', module)
     (): TemplateResult => html`
       <style>${styles}</style>
       <style>body { padding: 30px; } </style>
+      <link href="https://fonts.googleapis.com/css?family=Material+Icons&display=block" rel="stylesheet">
       <h3>&lt;utu-button&gt;</h3>
       <utu-button
         ?fitted=${boolean('fitted', false)}
