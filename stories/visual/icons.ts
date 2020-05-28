@@ -11,6 +11,7 @@ const link = (text: string, url: string): TemplateResult => html`
 
 export const icons = (): TemplateResult => html`
   <div id="wrapper">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons&display=block" rel="stylesheet">
     <h3>Icons</h3>
     <p>We are using the icons of the ${link('Material Design library', 'https://material.io/resources/icons/')}</a>.</p>
     <p>The Web Components implementation is from the ${link('official Google repository', 'https://github.com/material-components/material-components-web-components/tree/master/packages/icon')}.</p>
