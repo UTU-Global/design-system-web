@@ -25,8 +25,12 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install
-    - run: npm install -g gh-pages
     - run: npm run build:scss
     - run: npm run build:components
     - run: npm run build:storybook
-    - run: gh-pages -d storybook-dist/
+
+    - name: GitHub Pages
+      uses: crazy-max/ghaction-github-pages@v2.0.1
+      with:
+        # Build directory to deploy
+        build_dir: storybook-dist
