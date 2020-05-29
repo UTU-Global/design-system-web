@@ -24,11 +24,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    
-    - name: Install NPM dependencies
     - run: npm install
-    
-    - name: Build artifacts 
     - run: npm run build:scss
     - run: npm run build:components
     - run: npm run build:storybook
