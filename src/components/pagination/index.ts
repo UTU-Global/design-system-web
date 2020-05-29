@@ -16,7 +16,7 @@ interface Props {
   nonumbers?: boolean;
 };
 
-export const pagination = ({
+export const Pagination = ({
   active = '1',
   start = 1,
   total = '5',
@@ -64,7 +64,7 @@ export const pagination = ({
   `;
 }
 
-pagination.observedAttributes = ['active', 'total'];
+Pagination.observedAttributes = ['active', 'total'];
 
 // @ts-ignore
-customElements.define('utu-pagination', component(pagination));
+customElements.define('utu-pagination', component(Pagination));

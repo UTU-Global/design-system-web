@@ -1,6 +1,6 @@
 import { html, TemplateResult } from 'lit-html';
 import { classMap, ClassInfo } from 'lit-html/directives/class-map';
-import { component, useState, useEffect } from 'haunted';
+import { component } from 'haunted';
 
 import { _taxonomy, _media } from './parts';
 

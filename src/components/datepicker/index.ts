@@ -1,6 +1,6 @@
 import { html, TemplateResult } from 'lit-html';
 import { classMap, ClassInfo } from 'lit-html/directives/class-map';
-import { component, useState, useEffect } from 'haunted';
+import { component, useEffect } from 'haunted';
 import flatpickr from 'flatpickr';
 
 import { triggerEvent } from './../../libs/utils';

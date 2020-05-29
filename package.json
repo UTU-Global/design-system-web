@@ -1,6 +1,6 @@
 {
   "name": "@utu-global/design-system",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "ALPHA version of the UTU Design System Web implementation.",
   "main": "src/index.js",
   "publishConfig": {
@@ -11,12 +11,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:scss": "webpack --config webpack.scss.js",
     "build:components": "webpack --config webpack.components.js",
-    "build:storybook": "build-storybook -c .storybook -o storybook-dist",
-    "deploy:surge": "surge ./storybook-dist/ https://utu-ds.surge.sh"
+    "build:storybook": "build-storybook -c .storybook -o storybook-dist"
   },
   "repository": {
     "type": "git",
-    "url": "taxfree@vs-ssh.visualstudio.com:v3/taxfree/UTUGlobal.TaxFree/UTU.Web.DesignSystem"
+    "url": "https://github.com/UTU-Global/design-system-web"
   },
   "author": "salvatore.laisa@utu.global",
   "license": "MIT",
@@ -42,7 +41,7 @@
     "sass-loader": "8.0.2",
     "to-string-loader": "1.1.6",
     "ts-loader": "7.0.5",
-    "ts-node": "8.10.1",
+    "ts-node": "8.10.2",
     "typescript": "3.9.3",
     "typescript-require": "0.2.10",
     "webpack": "4.43.0",

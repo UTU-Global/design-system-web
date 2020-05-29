@@ -1,5 +1,4 @@
 import { html, TemplateResult } from 'lit-html';
-import { classMap, ClassInfo } from 'lit-html/directives/class-map';
 import { component, useState, useEffect } from 'haunted';
 
 import { triggerEvent } from './../../libs/utils';

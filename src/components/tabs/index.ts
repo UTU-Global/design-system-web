@@ -3,7 +3,6 @@ import { classMap, ClassInfo } from 'lit-html/directives/class-map';
 import { component, useState, useEffect } from 'haunted';
 
 import { triggerEvent } from './../../libs/utils';
-import { UpdateEvent } from './../../types/events';
 
 import styles from './style.scss';
 
