@@ -11,8 +11,9 @@
 }
 
 ::slotted(mwc-icon) {
+  vertical-align: top;
   position: relative;
-  top: 7px;
+  top: 5px;
 }
 
 button {

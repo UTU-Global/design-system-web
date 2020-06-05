@@ -1,7 +1,7 @@
 {
   "name": "@utu-global/design-system",
   "version": "0.7.2",
-  "description": "ALPHA version of the UTU Design System Web implementation.",
+  "description": "BETA version of the UTU Design System Web implementation.",
   "main": "src/index.js",
   "publishConfig": {
     "access": "public"
