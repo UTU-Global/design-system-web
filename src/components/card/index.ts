@@ -3,6 +3,7 @@ import { classMap, ClassInfo } from 'lit-html/directives/class-map';
 import { component } from 'haunted';
 
 import { _taxonomy, _media } from './parts';
+import { empty } from './../../libs/parts';
 
 import styles from './style.scss';
 
@@ -42,7 +43,7 @@ export const Card = ({
         class=${classMap(classes)}
       >
         ${_taxonomy(taxonomy)}
-        <h3>${title}</h3>
+        ${title.length ? html`<h3>${title}</h3>` : empty()}
         <p><slot></slot></p>
 
         <div class="placeholder">
